@@ -23,7 +23,7 @@
 </head>
 <header>
   <div id="app">
-     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #191970">
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-biru">
         <a class="navbar-brand text-white" href="#">{{ config('app.name') }}</a>
         <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,9 +34,9 @@
             <li class="nav-item active">
               <a class="nav-link text-white" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link text-white" href="{{url('/post-note')}}"> Post Note</a>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                <i class="fa fa-shopping-cart"></i> Market Place

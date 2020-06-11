@@ -1,6 +1,6 @@
 
 <nav class="navbar navbar-light bg-dark">
-  <span class="navbar-brand" href="#">&copy copyrights <a href="#">Reza</a> - 2019</span>
+  <span class="navbar-brand text-white" href="#">&copy copyrights <a href="mailto:muhamad.reza@bni.co.id">Reza</a> - 2020</span>
 </nav>
 
 <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>

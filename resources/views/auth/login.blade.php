@@ -1,9 +1,9 @@
-@extends('layouts.master')
+@extends('layouts.header')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
+<div class="container pt-5" style="min-height: 100vh">
+    <div class="row justify-content-center pt-5">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">

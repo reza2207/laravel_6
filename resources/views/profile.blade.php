@@ -2,7 +2,7 @@
     @extends('layouts.header_profile')
     @section('content')
 
-      <div class="row pt-5 pb-2" style="background-color: #FFF8DC">
+      <div class="row pt-5 pb-2 text-biru">
         <div class="col col-lg-12">
           <div class="row">
             <div class="col col-lg-8 col-sm-12 bg-white offset-lg-2" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">

@@ -17,10 +17,10 @@
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/', 'HomeController@index')->name('home');
-
+//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'PostnoteController@index');
+//Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'PostnoteController@index');
 Route::get('/profile/{id}', 'ProfileController@profile')->name('profile');
 Route::get('/market-place', 'MarketController@index');
 Route::get('/post-note', 'PostnoteController@index');

@@ -29,14 +29,33 @@
                 </div>
                 <hr>
                 <div>
-                  {!!$r->content!!}
+                  {!!Str::limit($r->content, 400) !!} <a href='{{url("/post_notes/$r->id/$r->slug")}}'>read more...</a>
+                </div>
+                <div>
+                  <span class="created_by"><i class="fa fa-notes"></i> Posted by : <a href="{{ url('profile', $r->user->username)}}">{{ isset($r->user->name) ? $r->user->name : "" }}</a> {{ ' at '.$r->created_at}}</span>
                 </div>
                 <hr>
-                <div>
-                  <span class="created_by">Posted by : <a href="{{ url('profile', $r->user->username)}}">{{ isset($r->user->name) ? $r->user->name : "" }}</a> {{ ' at '.$r->created_at}}</span>
-                </div>
-                <div id="comment">
-                    Komentar
+                <div class="pb-5 comment">
+                    <div id="header-comment"></div>
+                    <div id="header-body">
+                        <textarea class="form-control" placeholder="Your comments write here..."></textarea>
+                    </div>
+                    <div id="body-comment">
+                        <i class="fa fa-comments"></i>
+                        <ul class="list-group pt-3">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <img src="{{url('picture/89e6ea03c68d27412d5f14b37df23785.jpg')}}" alt="..." class="rounded-circle" style="height: 50px;width: 50px">
+                                    <div class="col col-lg-11">
+                                        <blockquote class="blockquote">
+                                          <p class="mb-0 h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                          <footer class="blockquote-footer h6">Someone famous at </footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
                 </div>
             </div>
 
